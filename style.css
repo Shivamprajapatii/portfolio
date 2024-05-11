@@ -59,10 +59,11 @@ body {
 
 .image-name {
     display: flex;
-    justify-content: flex-start;
     color: black;
-    
+    align-items: center;
+    justify-content: space-evenly;
 }
+
 
 
 .image-name .name {
@@ -131,11 +132,11 @@ h3 span {
     width: 100%;
     list-style-type: none;
     display: flex;
-    margin-top: 1rem;
+    margin-top: 2.6rem;
 }
 
 .navbar ul li {
-    padding-left: 0.5rem;
+    padding-left: 0.3rem;
 }
 
 
@@ -152,7 +153,7 @@ h3 span {
 
 
 
-@media(max-width: 900px) {
+@media (max-width: 900px) {
     .navbar .hideOnMobile {
         display: none;
     }
@@ -187,7 +188,6 @@ h3 span {
 }
 
 
-
 /*================================= Header Section End ======================= */
 
 
@@ -195,27 +195,25 @@ h3 span {
 
 #project-main {
     padding-top: 4rem;
+    flex-direction: column;
     align-items: center;
-    width: 100%;
-
+    justify-content: center;
+    text-align: center;
 }
 
-@media screen and (max-width: 450px) {
-    #project-main {
-        margin-left: 7rem;
-    }
-}
+
 
 #project-home {
     background-color: white;
     color: black;
-    height: 100%;
-    width: 100%;
+    flex: 1;
     display: flex;
     flex-wrap: wrap;
     align-items: center;
     justify-content: center;
+    text-align: center;
     padding-top: 1rem;
+    padding-left: 2rem;
 }
 
 .peoject-heading {
@@ -232,8 +230,8 @@ h3 span {
 
 
 .project-main-card {
-    height: 16rem;
-    width: 16rem;
+    height: 250px;
+    width: 250px;
     display: inline-block;
     margin: 10px;
     border: 2px solid black;
@@ -252,17 +250,13 @@ h3 span {
 .card-img {
     border: 2px solid rgb(191, 14, 235);
     margin-top: 0.9rem;
-    margin-left: 3.5rem;
-    height: 60%;
-    width: 60%;
+    margin-left:30px;
+    height: 100px;
+    width: 100px;
     border-radius: 50%;
 }
 
-@media screen and (max-width: 250px) {
-    .card-img {
-        margin: auto;
-    }
-}
+
 
 .line-div {
     height: 0.1px;
@@ -306,37 +300,15 @@ h3 span {
     order: 1;
     width: 70%;
     padding-top: 1rem;
-    padding-left: 1rem;
+    padding-left: 2rem;
 }
 
 .abt-home img {
     order: 2;
-    margin-left: 2rem;
+    margin-left: 1.5rem;
 }
 
 
-@media screen and (max-width: 700px) {
-    .abt-home {
-        flex-direction: column;
-    }
-
-    .abt-home p {
-        order: 2;
-        flex-direction: column;
-    }
-}
-
-@media screen and (max-width: 450px) {
-    #about-main {
-        margin-left: 7rem;
-    }
-
-    #about-section .heading {
-        margin-left: 10rem;
-        background-color: #00ffff;
-        width: 10rem;
-    }
-}
 
 .cv-btn {
     margin-left: 5rem;
@@ -359,6 +331,7 @@ h3 span {
     opacity: 0.9;
     background-color: #e4e4e7;
 }
+
 
 /*================================= About Section End ======================= */
 
@@ -923,30 +896,6 @@ h3 span {
     height: 3rem;
 }
 
-@media screen and (max-width: 1130px) {
-
-    .pro-language,
-    .Deveops,
-    .detabase,
-    .frontend,
-    .backend {
-        margin-top: 1rem;
-       
-        align-items: center;
-        
-    }
-
-}
-
-@media screen and (max-width: 400px) {
-    .skill-heading {
-      padding-left: 8rem;
-    }
-    .all-skill-box {
-        margin-left: 8rem;
-    }
-}
-
 
 /*=================================== Programming End ======================== */
 
@@ -1005,7 +954,6 @@ h3 span {
 /*================================ Contact Details Section Another Page Start ========================================*/
 
 #contect-main {
-   
     margin: auto;
     width: 100vw;
     margin-top: 3rem;
@@ -1019,11 +967,6 @@ h3 span {
     align-items: center;
 }
 
-@media screen and (max-width: 400px) {
-    .contect-heading {
-       margin-left: 7rem;
-    }
-}
 
 
 .contect-heading .me {
@@ -1046,14 +989,6 @@ h3 span {
     width: 5rem;
 }
 
-@media screen and (max-width: 700px) {
-    .contect-form img {
-        display: none;
-    }
-    .contect-form {
-        margin-left: 5rem;
-    }
-}
 
 
 .contect-form .msg-form {

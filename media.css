@@ -1,0 +1,81 @@
+
+@media screen and (max-width: 991px) {
+    .pro-language,
+    .Deveops,
+    .detabase,
+    .frontend,
+    .backend {
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        margin-top: 5px;
+        
+    }
+   
+}
+
+@media screen and (max-width:768px) {
+    .contect-form img {
+        display: none;
+    }
+    .contect-form {
+        flex-direction: column;
+        align-items: center;
+       justify-content: center;
+    }
+    .abt-home {
+        flex-direction: column;
+    }
+
+    .abt-home p {
+        order: 2;
+        flex-direction: column;
+    }
+}
+
+
+@media screen and (max-width:579px) {
+    #main-header .image-name {
+        margin-left: 5rem;
+    }
+}
+
+@media screen and (max-width:420px) {
+    #project-main {
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+    }
+  
+    #project-main .peoject-heading {
+        text-align: center;
+    }
+    .all-skill-box {
+        margin-left: 5rem;
+    }
+    .skill-heading {
+      padding-left: 7rem;
+    }
+    .all-skill-box {
+        margin-left: 6rem;
+    }
+    #about-main {
+        flex-direction: column;
+        align-items: center;
+       justify-content: center;
+       
+    }
+    #about-section .heading {
+        margin-left: 10rem;
+       
+        width: 10rem;
+    }
+    .contect-heading {
+        margin-left: 7rem;
+     }
+     .cv-btn {
+        height: 2.4rem;
+        width: 4rem;
+    }
+}
