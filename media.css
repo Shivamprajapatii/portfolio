@@ -8,10 +8,19 @@
         flex-direction: column;
         align-items: center;
         justify-content: center;
-        margin-top: 5px;
+        margin-top: 3%;
         
     }
-   
+    #project-home {
+        margin: auto;
+    }
+    #main-footer {
+        margin: auto;
+        text-align: center;
+    }
+    #main-header {
+        margin: auto;
+    }
 }
 
 @media screen and (max-width:768px) {
@@ -31,12 +40,22 @@
         order: 2;
         flex-direction: column;
     }
+    #project-home {
+        margin: auto;
+    }
+    #main-footer {
+        margin: auto;
+        text-align: center;
+    }
+    #main-header {
+        margin: auto;
+    }
 }
 
 
 @media screen and (max-width:579px) {
     #main-header .image-name {
-        margin-left: 5rem;
+        margin-left: 10%;
     }
 }
 
@@ -52,13 +71,13 @@
         text-align: center;
     }
     .all-skill-box {
-        margin-left: 5rem;
+        margin-left: 10%;
     }
     .skill-heading {
-      padding-left: 7rem;
+      padding-left: 10%;
     }
     .all-skill-box {
-        margin-left: 6rem;
+        margin-left: 10%;
     }
     #about-main {
         flex-direction: column;
@@ -67,15 +86,15 @@
        
     }
     #about-section .heading {
-        margin-left: 10rem;
+        margin-left: 10%;
        
-        width: 10rem;
+        width: 10%;
     }
     .contect-heading {
-        margin-left: 7rem;
+        margin-left: 10%;
      }
      .cv-btn {
-        height: 2.4rem;
-        width: 4rem;
+        height: 40%;
+        width: 40%;
     }
 }

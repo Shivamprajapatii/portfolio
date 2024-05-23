@@ -953,115 +953,76 @@ h3 span {
 
 /*================================ Contact Details Section Another Page Start ========================================*/
 
-#contect-main {
+
+#contact-main-box {
+    height: 80vh;
+    width: 80vw;
+   
     margin: auto;
-    width: 100vw;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    flex-direction: column-reverse;
+}
+
+#contect-main {
     margin-top: 3rem;
+    border: 2px solid #ffa600;
+    border-radius: 20px;
+    width: 60%;
+    height: 80%;
+    
 }
-
-.contect-heading {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    text-align: center;
-    align-items: center;
-}
+   
 
 
-
-.contect-heading .me {
-    margin-left: 1rem;
-    color: #FFA600;
-}
-
-.contect-form {
-    width: 100%;
-    margin-top: 1rem;
-    display: flex;
-    align-items: center;
-    justify-content: space-evenly;
-    height: 70%;
-}
-
-.contect-form img {
-    margin-left: 5rem;
-    height: 5rem;
-    width: 5rem;
-}
-
-
-
-.contect-form .msg-form {
-  
-    text-align: center;
+.msg-form {
+    
+    margin-top: 2rem;
     flex: 1;
-    margin-right: 3rem;
+}
+.msg-form input {
+    width: 70%;
+    height: 7vh;
+    margin-top: 10px;
+    border-radius: 10px;
+}
+.msg-form :placeholder-shown {
+    font-weight: 700;
 }
 
 
-.contect-form .name {
-    margin-top: 1rem;
-    height: 3rem;
-    width: 80%;
-    border: 3px solid #FFA600;
-    border-radius: 8px;
-}
-
-.contect-form .email {
-    margin-top: 1rem;
-    height: 3rem;
-    width: 80%;
-    border: 3px solid #FFA600;
-    border-radius: 8px;
-}
-
-.contect-form .number {
-    margin-top: 1rem;
-    height: 3rem;
-    width: 80%;
-    border: 3px solid #FFA600;
-    border-radius: 8px;
-}
-
-.contect-form .message {
-    margin-top: 1rem;
-    height: 3rem;
-    width: 80%;
-    border: 3px solid #FFA600;
-    border-radius: 8px;
-}
-
-.msg-form .send-btn {
-    background-color: #FFA600;
+.msg-form button {
+    width: 40%;
     height: 2.2rem;
-    width: 15rem;
-    border-radius: 12px;
-    box-shadow: 5px 5x #FFA600;
-    transition: 8   00ms all;
+    border-radius: 15px;
 }
 
-
-.msg-form .send-btn:hover {
-    background-color: white;
-}
+ 
 /* ========================================== Contact Section End ======================================================== */
 
 
 
 /* ========================================== footer Section Start ======================================================== */
 #main-footer {
-    margin-top: 5rem;
-  
+    margin-top: 4rem;
+   height: 30vh;
+   width: 100%;
+ 
 }
 
 
 .foot-box {
+    margin: auto;
+    padding-top: 3rem;
+    
+    width: 60%;
     display: flex;
     align-items: center;
     justify-content: center;
     text-align: center;
     flex-direction: column; 
-    margin-left: 5rem;
+    
 }
 
 .foot-box .join-us {
