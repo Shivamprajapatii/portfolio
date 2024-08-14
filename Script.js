@@ -1,56 +1,49 @@
-const dynamicText = document.querySelector("h3 span");
+function toggleMenu() {
+  const menu = document.getElementById('menu');
+  menu.classList.toggle('show');
+}
 
-const words = ["Full Stack Web Devloper","Coffe Lover","System Designer","Vloger"];
-let wordIndex = 0;
-let charIndex = 0;
-let isDeleting = false;
-
-
-const typeEffect = () => {
-  const currentWord = words[wordIndex];
-  const currentChar = currentWord.substring(0,charIndex);
-  dynamicText.textContent = currentChar;
-
-  if(!isDeleting  && charIndex < currentWord.length) {
-    charIndex ++;
-    setTimeout(typeEffect,60);
-  } else if(isDeleting  && charIndex > 0) {
-    charIndex --;
-    setTimeout(typeEffect,100);
+function toggleTheme() {
+  const body = document.body;
+  const themeIcon = document.getElementById('theme-icon');
+  
+  body.classList.toggle('dark');
+  
+  // Change the icon based on the current theme
+  if (body.classList.contains('dark')) {
+      themeIcon.src = 'sun-icon-url.png';  // Replace with the URL for your sun icon
   } else {
-    isDeleting = !isDeleting;
-    wordIndex = !isDeleting ? (wordIndex + 1) % words.length : wordIndex; 
-    setTimeout(typeEffect,300);
+      themeIcon.src = 'moon-icon-url.png'; // Replace with the URL for your moon icon
+  }
+}
+
+
+
+
+
+const dynamicText1 = document.querySelector("p span");
+const words1 = ["Full Stack Web Devloper","Coffe Lover","System Designer","Vloger"];
+let wordIndex1 = 0;
+let charIndex1 = 0;
+let isDeleting1 = false;
+
+
+const typeEffec1 = () => {
+  const currentWor1 = words1[wordIndex1];
+  const currentChar1 = currentWor1.substring(0,charIndex1);
+  dynamicText1.textContent = currentChar1;
+
+  if(!isDeleting1  && charIndex1 < currentWor1.length) {
+    charIndex1 ++;
+    setTimeout(typeEffec1,60);
+  } else if(isDeleting1  && charIndex1 > 0) {
+    charIndex1 --;
+    setTimeout(typeEffec1,100);
+  } else {
+    isDeleting1 = !isDeleting1;
+    wordIndex1 = !isDeleting1 ? (wordIndex1 + 1) % words1.length : wordIndex1; 
+    setTimeout(typeEffec1,400);
   }
 } 
 
-typeEffect();
-
-
-const dynamicTextt = document.querySelector("h6 span");
-
-const wordsss = ["#GitHub","#linkdIn ","#Instagram","#Facebook","#Twitter"];
-let wordIndexx = 0;
-let charIndexx = 0;
-let isDeletingg = false;
-
-
-const typeEffectt = () => {
-  const currentWordd = wordsss[wordIndexx];
-  const currentCharr = currentWordd.substring(0,charIndexx);
-  dynamicTextt.textContent = currentCharr;
-
-  if(!isDeletingg  && charIndexx < currentWordd.length) {
-    charIndexx ++;
-    setTimeout(typeEffectt,200);
-  } else if(isDeletingg  && charIndexx > 0) {
-    charIndexx --;
-    setTimeout(typeEffectt,100);
-  } else {
-    isDeletingg = !isDeletingg;
-    wordIndexx = !isDeletingg ? (wordIndexx + 1) % wordsss.length : wordIndexx; 
-    setTimeout(typeEffectt,300);
-  }
-} 
-
-typeEffectt();
+typeEffec1();
