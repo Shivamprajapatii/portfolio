@@ -19,31 +19,35 @@
 
 <body>
     <!--======================================= header Part Start ====================================================--->
-    <header>
-        <div id="main-header">
-            <div class="image-name">
-                <div class="header-image">
-                    <img src="./assests/Image.png" alt="My Image" class="hero-image">
-                </div>
-                <div class="name">
-                    <h2>@SDE Shivam Prajapati</h2>
-                    <p>Software Engineer</p>
-                    <h3>I am a <span class="typed"></span></h3>
-                </div>
-            </div>
-            <div class="navbar">
-                <ul>
-                    <li class="hideOnMobile"><a href="#home" class="home" style="color:#FFA600">Home</a></li>
-                    <li class="hideOnMobile"> <a href="#skill-home">Skills</a></li>
-                    <li class="hideOnMobile"> <a href="#project-main">Projects</a></li>
-                    <li class="hideOnMobile"> <a href="#about-section">About</a></li>
-                    <li class="hideOnMobile"><a href="#contect-main">Contact</a></li>
-                    <!-- <li class="menu-button" onclick=showSidebar()><i class="fa-solid fa-bars  menu"></i></li>  -->
-                </ul>
+    <nav class="navbar">
+        <div class="logo">
+            <img src="/assests/Image.png" alt="Logo">
+            <div class="nav-text">
+                <h1>@SDE Shivam Prajapati</h1>
+                <p>Software Engineer</p>
+                <p class="change-text">I am a <span class="highlight typed"></span></p>
             </div>
         </div>
-
-    </header>
+        <div class="menu" id="menu">
+            <a href="#home" class="active">Home</a>
+            <a href="#skills">Skills</a>
+            <a href="#projects">Projects</a>
+            <a href="#about">About</a>
+            <a href="#contact">Contact</a>
+            <div class="theme-toggle" onclick="toggleTheme()">
+                <i class="fa-solid fa-moon" alt="Toggle Dark Mode" id="theme-icon"></i>
+            </div>
+            <!-- <a href="/singUp">SingUp</a>
+            <a href="/login">Login</a> -->
+        </div>
+        <div class="controls">
+            <div class="hamburger" onclick="toggleMenu()">
+                <div class="bar"></div>
+                <div class="bar"></div>
+                <div class="bar"></div>
+            </div>
+        </div>
+    </nav>
     <!--============================================== header Part Start ==========================================================--->
 
     <!--========================================== Project Section Start ======================================================== -->
