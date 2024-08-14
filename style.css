@@ -181,6 +181,14 @@ body.dark {
         width: 14rem;
     }
 }
+@media (max-width: 768px) {
+    .navbar .nav-text {
+        width: 14rem;
+    }
+    .hamburger {
+       margin-bottom: 3rem;
+    }
+}
 
 
 /*================================= Header Section End ======================= */
