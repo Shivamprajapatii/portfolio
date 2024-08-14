@@ -177,6 +177,9 @@ body.dark {
     .hamburger {
         display: flex;
     }
+    .navbar .nav-text {
+        width: 14rem;
+    }
 }
 
 
