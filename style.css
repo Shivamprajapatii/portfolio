@@ -185,8 +185,9 @@ body.dark {
     .navbar .nav-text {
         width: 14rem;
     }
-    .hamburger {
-       margin-bottom: 3rem;
+    .controls {
+       margin: 0 3rem 3rem 0rem;
+       background-color: #007bff;
     }
 }
 
