@@ -37,7 +37,7 @@
             <div class="theme-toggle" onclick="toggleTheme()">
                 <i class="fa-solid fa-moon" alt="Toggle Dark Mode" id="theme-icon"></i>
             </div>
-            
+
         </div>
         <div class="controls">
             <div class="hamburger" onclick="toggleMenu()">
@@ -50,82 +50,39 @@
     <!--============================================== header Part Start ==========================================================--->
 
     <!--========================================== Project Section Start ======================================================== -->
-    <section id="project-main">
-        <div class="peoject-heading">
-            <h1 class="head-recent">Recent</h1>
-            <h1 class="head-project">Projects</h1>
-        </div>
-        <div id="project-home">
-           
-                <div class="project-main-card">
-                    <a>
-                        <img src="https://res.cloudinary.com/dl9lv2jzq/image/upload/v1714741296/Portfolio/logo_mqh6oq.png" alt="Man" class="card-img">
-                        <div class="description">
-                            <h3>
-                                Spotify Clone
-                            </h3>
-                            <button><a href="/project/<%= project._id %>">Click Me!</a></button>
-                        </div>
-                    </a>
-                </div>
-                <div class="project-main-card">
-                    <a>
-                        <img src="https://res.cloudinary.com/dl9lv2jzq/image/upload/v1714119009/Portfolio/Simon_Game_vfzvr1.png" alt="Man" class="card-img">
-                        <div class="description">
-                            <h3>
-                                Simon Game
-                            </h3>
-                            <button><a href="/project/<%= project._id %>">Click Me!</a></button>
-                        </div>
-                    </a>
-                </div>
-                <div class="project-main-card">
-                    <a>
-                        <img src="https://images.unsplash.com/photo-1501785888041-af3ef285b470?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTh8fHRyYXZlbHxlbnwwfHwwfHx8MA%3D%3D&auto=format&fit=crop&w=800&q=60" alt="Man" class="card-img">
-                        <div class="description">
-                            <h3>
-                              Air BNB
-                            </h3>
-                            <button><a href="/project/<%= project._id %>">Click Me!</a></button>
-                        </div>
-                    </a>
+   
+    <section class="projects-section" id="projects">
+        <h2>MY <span>LATEST PROJECTS</span></h2>
+        <div class="project-container">
+            <div class="projects-grid">
+                <div class="project-card">
+                    <div class="project-image" style="background-image: url('https://images.unsplash.com/photo-1501785888041-af3ef285b470?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTh8fHRyYXZlbHxlbnwwfHwwfHx8MA%3D%3D&auto=format&fit=crop&w=800&q=60');">
+                        <img src="https://images.unsplash.com/photo-1501785888041-af3ef285b470?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTh8fHRyYXZlbHxlbnwwfHwwfHx8MA%3D%3D&auto=format&fit=crop&w=800&q=60" alt="Project">
+                    </div>
+                    <h3>Air BNB</h3>
+                    <a href="https://majorproject-vlhl.onrender.com" class="btn-view">VIEW PROJECT</a>
                 </div>
 
-                <div class="project-main-card">
-                    <a>
-                        <img src="https://res.cloudinary.com/dl9lv2jzq/image/upload/v1714744800/Portfolio/Screenshot_2024-05-03_192827_s8g2ms.png " alt="Man" class="card-img">
-                        <div class="description">
-                            <h3>
-                                TODO APP
-                            </h3>
-                            <button><a href="/project/<%= project._id %>">Click Me!</a></button>
-                        </div>
-                    </a>
+                <div class="project-card">
+                    <div class="project-image" style="background-image: url('https://res.cloudinary.com/dl9lv2jzq/image/upload/v1714119009/Portfolio/Simon_Game_vfzvr1.png');">
+                        <img src="(https://res.cloudinary.com/dl9lv2jzq/image/upload/v1714119009/Portfolio/Simon_Game_vfzvr1.png');" alt="Simon Game">
+                    </div>
+                    <h3>Simon Game</h3>
+                    <a href="#" class="btn-view">VIEW PROJECT</a>
                 </div>
-                <div class="project-main-card">
-                    <a>
-                        <img src="https://res.cloudinary.com/dl9lv2jzq/image/upload/v1714741793/Portfolio/camera_image_b8ip6v.avif" alt="Man" class="card-img">
-                        <div class="description">
-                            <h3>
-                                Camera Clicking
-                            </h3>
-                            <button><a href="/project/<%= project._id %>">Click Me!</a></button>
-                        </div>
-                    </a>
-                </div>
-                <div class="project-main-card">
-                    <a>
-                        <img src="https://res.cloudinary.com/dl9lv2jzq/image/upload/v1714741691/Portfolio/amazon-logo_1_royl3d.png" alt="Man" class="card-img">
-                        <div class="description">
-                            <h3>
-                                Amazon Clone
-                            </h3>
-                            <button><a href="/project/<%= project._id %>">Click Me!</a></button>
-                        </div>
-                    </a>
-                </div>
-        </div>
 
+                <div class="project-card">
+                    <div class="project-image"
+                        style="background-image: url('https://res.cloudinary.com/dl9lv2jzq/image/upload/v1714744800/Portfolio/Screenshot_2024-05-03_192827_s8g2ms.png');">
+                        <img src="https://res.cloudinary.com/dl9lv2jzq/image/upload/v1714744800/Portfolio/Screenshot_2024-05-03_192827_s8g2ms.png"
+                            alt="ToDo App">
+                    </div>
+                    <h3>ToDo App</h3>
+                    <a href="#Todo.html" class="btn-view">VIEW PROJECT</a>
+                </div>
+
+            </div>
+        </div>
     </section>
 
     <!--========================================== Project Section End ======================================================== -->
