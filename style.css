@@ -309,72 +309,120 @@ body.dark {
 /*================================= Preject Section End ======================= */
 
 /*================================= About Section End ======================= */
-#about-section {
-    margin-top: 7rem;
+.about-section {
+    background-color: #fff;
+    border-radius: 15px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    margin: 50px 0;
 }
 
-#about-section .heading {
-    display: flex;
+.about-section h2 {
+    text-align: center;
     align-items: center;
-    justify-content: center;
 }
 
-#about-section span {
-    margin-left: 0.6rem;
-    color: #FFA600;
-}
-
-#about-main {
-    width: 85%;
+.about-container {
+    max-width: 1200px;
     margin: auto;
-    border: 3px solid #FFA600;
-    border-radius: 2rem;
+    padding: 20px;
 }
 
-#about-main .abt-home {
+.about-content {
     display: flex;
-    justify-content: center;
+    flex-wrap: wrap;
     align-items: center;
-    align-items: center;
+    padding: 5px 0px 0px 0px;
+    border: 2px solid #fbc02d;
+    border-radius: 1rem;
+    margin: auto;
+}
+
+.profile-image {
+    flex: 1;
+    text-align: center;
+}
+
+.profile-image img {
+    border-radius: 50%;
+    width: 200px;
+    height: 200px;
+    object-fit: cover;
+    border: 5px solid #fbc02d;
+}
+
+.about-text {
+    flex: 2;
+    padding: 10px;
 
 }
 
-.abt-home p {
-    order: 1;
-    width: 70%;
-    padding-top: 1rem;
-    padding-left: 2rem;
+.about-text p {
+    text-align: start;
 }
 
-.abt-home img {
-    order: 2;
-    margin-left: 1.5rem;
+.about-text .btn-download {
+    color: black;
 }
 
-
-
-.cv-btn {
-    margin-left: 5rem;
-    margin-top: 1.2rem;
-    margin-bottom: 1.2rem;
-    background-color: #ffa600;
-    height: 2.4rem;
-    width: 12rem;
-    border-radius: 0.9rem;
-    font-weight: 600;
-    cursor: pointer;
-    transition: 0.3s;
-    box-shadow: 0 0 0.9rem #FFA600;
-    animation: slideUp 1s ease forwards;
-    animation-delay: 1ms;
+.about-text h2 {
+    font-size: 2.5rem;
+    color: #333;
+    margin-bottom: 20px;
 }
 
-.cv-btn:hover {
-    box-shadow: none;
-    opacity: 0.9;
-    background-color: #e4e4e7;
+.about-text h2 span {
+    color: #fbc02d;
 }
 
+.about-text p {
+    font-size: 1.1rem;
+    line-height: 1.8;
+    margin-bottom: 15px;
+}
+
+.about-text p strong {
+    font-weight: bold;
+}
+
+.about-text a {
+    color: #fbc02d;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.btn-download {
+    display: inline-block;
+    margin-top: 20px;
+    padding: 10px 20px;
+    background-color: #fbc02d;
+    color: #fff;
+    border-radius: 50px;
+    text-transform: uppercase;
+    font-weight: bold;
+    text-align: center;
+    transition: background-color 0.3s;
+}
+
+.btn-download:hover {
+    background-color: #f57c00;
+}
+
+@media (max-width: 768px) {
+    .about-content {
+        flex-direction: column;
+    }
+
+    .profile-image,
+    .about-text {
+        flex: unset;
+        text-align: center;
+    }
+
+    .about-text {
+        padding: 0;
+    }
+}
 
 /*================================= About Section End ======================= */
 
