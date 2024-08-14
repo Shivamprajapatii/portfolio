@@ -47,3 +47,49 @@ const typeEffec1 = () => {
 } 
 
 typeEffec1();
+
+
+// Contact Form Submission 
+
+document.getElementById('contactForm').addEventListener('submit', function(event) {
+  event.preventDefault();
+
+  const submitButton = document.querySelector('.submit-btn');
+  submitButton.textContent = "Sending...";
+  submitButton.classList.add('sending');
+
+  // Simulate form submission delay
+  setTimeout(() => {
+      submitButton.textContent = "Sent!";
+      submitButton.classList.remove('sending');
+      submitButton.classList.add('sent');
+
+      // Reset form after a short delay
+      setTimeout(() => {
+          submitButton.textContent = "Send";
+          submitButton.classList.remove('sent');
+          document.getElementById('contactForm').reset();
+      }, 2000);
+  }, 2000);
+});
+
+
+
+
+    function openModal(modalId) {
+        document.getElementById(modalId).style.display = 'flex';
+    }
+
+    function closeModal(modalId) {
+        document.getElementById(modalId).style.display = 'none';
+    }
+
+    // Close the modal if the user clicks outside of the modal content
+    window.onclick = function(event) {
+        const modals = document.getElementsByClassName('modal');
+        for (let i = 0; i < modals.length; i++) {
+            if (event.target == modals[i]) {
+                modals[i].style.display = 'none';
+            }
+        }
+    }
