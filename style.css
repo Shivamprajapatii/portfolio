@@ -162,7 +162,6 @@ body.dark {
     .menu {
         display: none;
         flex-direction: column;
-        background-color: var(--background-color);
         position: absolute;
         top: 60px;
         right: 20px;
