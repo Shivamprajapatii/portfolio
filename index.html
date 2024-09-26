@@ -91,26 +91,6 @@
                     <a href="Spotify.html" class="btn-view">VIEW PROJECT</a>
                 </div>
 
-                <div class="project-card">
-                    <div class="project-image"
-                        style="background-image: url('https://res.cloudinary.com/dl9lv2jzq/image/upload/v1714741691/Portfolio/amazon-logo_1_royl3d.png');">
-                        <img
-                            src="https://res.cloudinary.com/dl9lv2jzq/image/upload/v1714741691/Portfolio/amazon-logo_1_royl3d.png">
-                    </div>
-                    <h3>Amzazon Forntend Clone</h3>
-                    <a href="Amazon.html" class="btn-view">VIEW PROJECT</a>
-                </div>
-
-                <div class="project-card">
-                    <div class="project-image"
-                        style="background-image: url('https://res.cloudinary.com/dl9lv2jzq/image/upload/v1714741793/Portfolio/camera_image_b8ip6v.avif');">
-                        <img
-                            src="https://res.cloudinary.com/dl9lv2jzq/image/upload/v1714741793/Portfolio/camera_image_b8ip6v.avif">
-                    </div>
-                    <h3>Camera Clicking</h3>
-                    <a href="Camera.html" class="btn-view">VIEW PROJECT</a>
-                </div>
-
             </div>
         </div>
     </section>
@@ -176,7 +156,7 @@
                 <h2>DevOps</h2>
                 <ul>
                     <li>Git <img src="icons8-git-96.png" alt="Git"></li>
-                    <li>AWS <img src="icons8-amazon-web-services-96.png" alt="AWS"></li>
+                    <li>AWS <img src="aws.png" alt="AWS"></li>
                     <li>GITHUB <img src="icons8-git-96.png" alt="GITHUB"></li>
                 </ul>
             </div>
@@ -185,7 +165,7 @@
                 <ul>
                     <li>Java <img src="icons8-java-96.png" alt="Java"></li>
                     <li>DSA <img src="icons8-java-96.png" alt="DSA"></li>
-                    <li>C++ <img src="cpp.png" alt="C++"></li>
+                    <li>C++ <img src="Cpp.png" alt="C++"></li>
                     <li>Python <img src="python-96.png" alt="Python"></li>
                 </ul>
             </div>
@@ -212,6 +192,22 @@
                 <a href="#certificate-section" class="view-details">View Details</a>
             </div>
 
+            <!-- Certificate Card 3 -->
+            <div class="certificate-card" onclick="openModal('modal3')">
+                <img src="Spring-boot.png" alt="Spring Boot Certificate">
+                <div class="certificate-title">foundamental of Spring Boot</div>
+                <div class="certificate-issuer">Issued by Codding Suttle</div>
+                <a href="#certificate-section" class="view-details">View Details</a>
+            </div>
+
+            <!-- Certificate Card 4 -->
+            <div class="certificate-card" onclick="openModal('modal4')">
+                <img src="Java DSA.png" alt="Java DSA">
+                <div class="certificate-title">Advance Java with Data Structure and Algorithms</div>
+                <div class="certificate-issuer">Issued by Apna College Academy</div>
+                <a href="#certificate-section" class="view-details">View Details</a>
+            </div>
+
             <!-- Add more certificates as needed -->
         </div>
 
@@ -235,6 +231,28 @@
                 </div>
             </div>
         </div>
+
+        <div id="modal3" class="modal">
+            <div class="modal-content">
+                <span class="modal-close" onclick="closeModal('modal3')">&times;</span>
+                <div class="modal-title">Spring Boot foundamental</div>
+                <div class="modal-issuer">Codding Shuttle</div>
+                <div class="modal-skills">Basic Of Spring Boot, Server Creation, REST APIs, Small Project, MVC Architrcture
+                </div>
+            </div>
+        </div>
+
+        <div id="modal4" class="modal">
+            <div class="modal-content">
+                <span class="modal-close" onclick="closeModal('modal4')">&times;</span>
+                <div class="modal-title">Advanced Java with DSA</div>
+                <div class="modal-issuer">Issued by Apna College Academy</div>
+                <div class="modal-skills">Advanced topics such as Array,String, Queue, linkedlist
+                </div>
+            </div>
+        </div>
+
+        
     </section>
     <!--========================================== Certificate Section End ======================================================== -->
 
