@@ -771,7 +771,7 @@ body.dark {
 /* ========================================== footer Section Start ======================================================== */
 
 footer {
-    background-color: #fff;
+    color: var(--background-color);
     padding: 40px 20px;
     text-align: center;
     border-top: 1px solid #e0e0e0;
@@ -802,8 +802,8 @@ footer {
 }
 
 .social-icons a {
-    color: var(--background-color);
-    font-size: 18px;
+    color: var(--highlight-color);
+    font-size: 30px;
     margin: 0 10px;
     display: inline-block;
     transition: transform 0.3s ease, color 0.3s ease;
